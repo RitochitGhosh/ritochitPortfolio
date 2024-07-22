@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import CopyrightIcon from '@mui/icons-material/Copyright';
+import Footer from '../Footer';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -40,19 +42,19 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="h-screen-minus-70 bg-[#fafbf8] snap-start flex justify-center items-center">
-      <div className="flex w-full mx-[200px]">
-        <div className="basis-2/3 flex flex-col items-start py-6 pr-10">
+    <div id="contact" className="lg:h-screen-minus-70 bg-[#fafbf8] snap-start flex justify-center items-center px-4 md:px-0">
+      <div className="flex flex-col md:flex-row w-full mx-auto max-w-screen-lg">
+        <div className="basis-2/3 flex flex-col items-start py-6 md:pr-10">
           <div className="text-[#15023a] mb-8 flex flex-col gap-3">
-            <div className="text-6xl font-bold">Have some ideas?</div>
-            <div className="text-4xl opacity-50 text-[#933EFF]">
+            <div className="text-4xl md:text-6xl font-bold">Have some ideas?</div>
+            <div className="text-2xl md:text-4xl opacity-50 text-[#933EFF]">
               I'm always eager for new opportunities to learn. <br />
               Let's bring the idea to reality.
             </div>
-            <div className="text-2xl">Just fill out the details, I will reach you out as soon as possible.</div>
+            <div className="text-lg md:text-2xl">Just fill out the details, I will reach you out as soon as possible.</div>
           </div>
           <form onSubmit={handleSubmit} className="w-full max-w-lg">
-            <div className="mb-6 ">
+            <div className="mb-6">
               <input
                 type="text"
                 id="name"
@@ -93,20 +95,21 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <div className="basis-2/5 flex flex-col items-start justify-center pl-10 gap-24">
-
-          
-            <div className = "text-[#15023a] text-4xl font-bold mb-4">Contact Details <br /> <a href="mailto:imrito18@gmail.com" className="text-[#933EFF] hover:underline text-xl px-1">imrito18@gmail.com</a></div>
-
-            <div className = "text-4xl font-bold flex flex-col gap-3">
-              Location <br /> 
-              Kolkata, India
-              <div className = "text-[#933EFF] opacity-80">{currentTime}</div>
-            </div>
-            
-          
+        <div className="basis-2/5 flex flex-col items-start justify-center pl-0 md:pl-10 gap-6 md:gap-24 mt-8 md:mt-0">
+          <div className="text-[#15023a] text-3xl md:text-4xl font-bold mb-4">
+            Contact Details <br /> 
+            <a href="mailto:imrito18@gmail.com" className="text-[#933EFF] hover:underline text-lg md:text-xl px-1">
+              imrito18@gmail.com
+            </a>
+          </div>
+          <div className="text-3xl md:text-4xl font-bold flex flex-col gap-3 pb-20">
+            Location <br /> 
+            Kolkata, India
+            <div className="text-[#933EFF] opacity-80">{currentTime}</div>
+          </div>
         </div>
       </div>
+      
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-
 import Featured from './locations/Featured';
 import WebApp from './locations/WebApp';
 import TechBlogs from './locations/TechBlogs';
@@ -29,14 +28,25 @@ const Portfolio = () => {
   ];
 
   const currentLocationIndex = locations.findIndex(loc => loc.name === location);
-  
+
   return (
     <div id="portfolio" className="h-screen-minus-70 bg-[#fafbf8] snap-start flex flex-col justify-center items-center" style={{ backgroundImage: 'url(/background.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', width: '100vw', height: 'calc(100vh - 100px)' }}>
-      <div className="w-1/2 border-2 border-black flex flex-col justify-start items-center p-4">
+      <div className="w-11/12 sm:w-3/4 lg:w-1/2 border-2 rounded-xl border-black flex flex-col justify-start items-center p-4">
         <div className="flex justify-center items-center mb-4">
-          <div className="text-5xl font-bold text-[#15023a]">Portfolio</div>  
+          <div className="text-5xl font-bold text-[#15023a]">Portfolio</div>
         </div>
-        <div className="flex justify-center items-center gap-8 mb-4">
+        <div className="block lg:hidden mb-4">
+          <select 
+            className="p-2 border rounded-md" 
+            value={location} 
+            onChange={(e) => handleLocation(e.target.value)}
+          >
+            {locations.map(loc => (
+              <option key={loc.name} value={loc.name}>{loc.label}</option>
+            ))}
+          </select>
+        </div>
+        <div className="hidden lg:flex justify-center items-center gap-8 mb-4">
           {locations.map((loc, index) => (
             <motion.div
               key={loc.name}
