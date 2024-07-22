@@ -28,7 +28,7 @@ const Intro = () => {
   return (
     <div id="intro" className="h-screen-small lg:h-screen-minus-70 bg-[#fafbf8] snap-start flex flex-col lg:flex-row">
       <div className="hidden lg:flex basis-6/12 lg:mr-40 justify-end overflow-hidden">
-        <div className="relative left-12 top-28 bg-[#933EFF] rounded-full w-[700px] h-[700px] flex items-start justify-start outline outline-8 outline-[#933EFF]/50 outline-offset-8">
+        <div className="relative left-12 top-24 bg-[#933EFF] rounded-full w-[700px] h-[700px] flex items-start justify-start outline outline-8 outline-[#933EFF]/50 outline-offset-8">
           <img src="/bgRemoved.png" alt="" className="relative left-40 top-28 w-[500px]" />
         </div>
       </div>
