@@ -10,18 +10,7 @@ const testimonials = [
     position: 'DevRel Intern,Technical Writer',
     text: "I've been mentoring Ritochit for over an year now, and he is one of the most hardworking and talented guy I've seen. He is a fast learner and really diverse with his skills, and is extremely passionate about learning new skills and likes to learn every topic by going to the very deep!",
   },
-  {
-    imgSrc: '/public/myPic.jpeg',
-    name: 'Jane Smith',
-    position: 'Project Manager',
-    text: 'Working with Ritochit has been a wonderful experience. His dedication and passion for technology are truly inspiring.',
-  },
-  {
-    imgSrc: '/public/myPic.jpeg',
-    name: 'Michael Johnson',
-    position: 'UX Designer',
-    text: 'Ritochit’s ability to translate complex requirements into elegant solutions is unmatched. He’s a great asset to any team.',
-  },
+  
 ];
 
 const Testimonials = () => {
