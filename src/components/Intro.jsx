@@ -29,7 +29,7 @@ const Intro = () => {
     <div id="intro" className="h-screen-small lg:h-screen-minus-70 bg-[#fafbf8] snap-start flex flex-col lg:flex-row">
       <div className="hidden lg:flex basis-6/12 lg:mr-40 justify-end overflow-hidden">
         <div className="relative left-12 top-28 bg-[#933EFF] rounded-full w-[700px] h-[700px] flex items-start justify-start outline outline-8 outline-[#933EFF]/50 outline-offset-8">
-          <img src="public/bgRemoved.png" alt="" className="relative left-40 top-28 w-[500px]" />
+          <img src="/bgRemoved.png" alt="" className="relative left-40 top-28 w-[500px]" />
         </div>
       </div>
 
@@ -47,7 +47,7 @@ const Intro = () => {
         </div>
 
         <div className="block lg:hidden absolute top-[25%] left-[15%] w-full h-full ">
-          <img src="public/mobile.jpg" alt="" className=" w-[70%] h-[50%] object-cover object-center opacity-50" />
+          <img src="/mobile.jpg" alt="" className=" w-[70%] h-[50%] object-cover object-center opacity-50" />
         </div>
       </div>
     </div>

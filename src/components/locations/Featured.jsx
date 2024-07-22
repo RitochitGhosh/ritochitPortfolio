@@ -7,32 +7,32 @@ const Features = [
     title: "To Do Application",
     github: "https://github.com/RitochitGhosh/Todo_Application",
     deployment: "https://minimalistictodoapplication.netlify.app/",
-    imgSrc: "/public/todo.png",
+    imgSrc: "/todo.png",
   },
   {
     index: 2,
     title: "games_terminal",
     github: "https://github.com/RitochitGhosh/games_terminal",
     deployment: "https://www.npmjs.com/package/games_terminal",
-    imgSrc: "/public/games_terminal.png",
+    imgSrc: "/games_terminal.png",
   },
   {
     index: 3,
     title: "C_clock",
     link: "https://gist.github.com/RitochitGhosh/410e4d47911bc347f52ff319a628fabb",
-    imgSrc: "public/C_clock.png",
+    imgSrc: "/C_clock.png",
   },
   {
     index: 4,
     title: "Dissecting JavaScript I",
     link: "https://ritochit.hashnode.dev/dissecting-javascript-i",
-    imgSrc: "public/js1.png",
+    imgSrc: "/js1.png",
   },
   {
     index: 5,
     title: "Dissecting JavaScript II",
     link: "https://ritochit.hashnode.dev/dissecting-javascript-ii",
-    imgSrc: "public/js2.png",
+    imgSrc: "/js2.png",
   }
 ];
 

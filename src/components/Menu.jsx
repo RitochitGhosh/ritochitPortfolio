@@ -31,7 +31,7 @@ const Menu = ({ sidebar, setSidebar }) => {
                     </ul>
                 </div>
                 <div className="px-6 py-8 text-[#15023a] flex flex-col items-start gap-4">
-                    <img src="../../public/myPic.jpeg" alt="Myself" width={50} className='rounded-full outline outline-[#15023a] outline-4 outline-offset-2' />  
+                    <img src="/myPic.jpeg" alt="Myself" width={50} className='rounded-full outline outline-[#15023a] outline-4 outline-offset-2' />  
                     <a href="#intro" className="font text-lg font-bold flex items-center gap-1">
                         <CopyrightIcon sx={{ fontSize: 15 }} />
                         <span className="text-[#4087f5]">R</span>
