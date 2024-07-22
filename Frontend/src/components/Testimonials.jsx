@@ -7,9 +7,22 @@ const testimonials = [
   {
     imgSrc: '/swapnoneel.jpg',
     name: 'Swapnoneel Saha',
-    position: 'DevRel Intern,Technical Writer',
+    position: 'DevRel Intern',
     text: "I've been mentoring Ritochit for over an year now, and he is one of the most hardworking and talented guy I've seen. He is a fast learner and really diverse with his skills, and is extremely passionate about learning new skills and likes to learn every topic by going to the very deep!",
   },
+  {  
+    imgSrc: '/debajyati.jpg',
+    name: 'Debajyati Dey',
+    position: 'Web Developer',
+    text: 'Ritochit is one of the most versatile developers I have seen till now. He is a very consistent coder with in-depth knowledge, has good managerial skills and treats others with empathy. I definitely expect him to gain great opportunities & high success in life.'
+  },
+  {
+    imgSrc: '/arindam.jpg',
+    name: 'Arindam Majumder',
+    position: 'DevRel @getpieces',
+    text: '.'
+  }
+  
   
 ];
 

@@ -52,9 +52,9 @@ const Work = () => {
           </div>
           <div className="text-[#15023a] text-left">
             Also, my friends and I are trying to build a
-            <span className="text-[#933EFF] font-semibold opacity-50 cursor-pointer hover:opacity-80 ease-in-out duration-200"> coding community</span> in our college to help our juniors stay on the right track, just as our seniors
-            <span className="underline font-semibold cursor-pointer" onClick={handleSwapnoneel}> Swapnoneel Saha</span>,
-            <span className="underline font-semibold cursor-pointer" onClick={handleArindam}> Arindam Majumder</span>, and
+            <span className="text-[#933EFF] font-semibold opacity-50 cursor-pointer hover:opacity-80 ease-in-out duration-200"> coding community</span> in our college to help our juniors stay on the right track, just as our seniors 
+            <span className="underline font-semibold cursor-pointer" onClick={handleSwapnoneel}> Swapnoneel Saha</span>, 
+            <span className="underline font-semibold cursor-pointer" onClick={handleArindam}> Arindam Majumder</span>, and 
             <span className="underline font-semibold cursor-pointer" onClick={handleArnab}> Arnab Pal</span> guided us when we stepped into this tech world.
           </div>
           <div className="text-[#15023a] text-left">
