@@ -7,7 +7,7 @@ const testimonials = [
   {
     imgSrc: '/swapnoneel.jpg',
     name: 'Swapnoneel Saha',
-    position: 'DevRel Intern',
+    position: 'DevRel Intern, Keploy',
     text: "I've been mentoring Ritochit for over an year now, and he is one of the most hardworking and talented guy I've seen. He is a fast learner and really diverse with his skills, and is extremely passionate about learning new skills and likes to learn every topic by going to the very deep!",
   },
   {  
