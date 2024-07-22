@@ -25,11 +25,14 @@ const Contact = () => {
     return () => clearInterval(timer);
   }, []);
 
+// await axios.post('https://your-backend.onrender.com/send', { name, email, message });
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      await axios.post('/send', { name, email, message });
+      await axios.post('https://ritochitportfolio.onrender.com/send', { name, email, message });
       alert('Message sent successfully');
       setName('');
       setEmail('');
