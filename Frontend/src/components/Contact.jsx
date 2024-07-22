@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import CopyrightIcon from '@mui/icons-material/Copyright';
-import Footer from '../Footer';
+
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -109,7 +108,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

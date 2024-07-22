@@ -4,7 +4,7 @@ import Portfolio from "./components/Portfolio";
 import Work from "./components/Work";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
-import Footer from "./Footer";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -16,7 +16,7 @@ export default function App() {
         <Work className="snap-start h-screen-minus-70" />
         <Testimonials className="snap-start h-screen-minus-70" />
         <Contact className="snap-start h-screen-minus-70" />
-        <Footer className="snap-start h-screen-minus-70" />
+        <Footer />
       </div>
     </div>
   );
