@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/send': {
-        target: 'http://localhost:5000', // Your backend URL
+        target: 'http://localhost:5000',
         changeOrigin: true,
         secure: false,
       },
