@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TestimonialCard from './utils/TestimonialCard';
 import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
@@ -20,10 +20,8 @@ const testimonials = [
     imgSrc: '/arindam.jpg',
     name: 'Arindam Majumder',
     position: 'DevRel @getpieces',
-    text: '.'
+    text: "I've mentored Ritochit and saw his impressive growth. He is curious, hardworking, and dedicated to learning. Ritochit's commitment and work ethic are exceptional, and I am confident he will achieve great success in the future."
   }
-  
-  
 ];
 
 const Testimonials = () => {
@@ -36,6 +34,18 @@ const Testimonials = () => {
   const handleNext = () => {
     setCurrentIndex((prevIndex) => Math.min(prevIndex + 1, testimonials.length - 1));
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
 
   return (
     <div
